@@ -44,7 +44,7 @@ public class AiAuditService {
             System.out.println("--- AI analyzed prompt and generated advanced filter: ---");
             System.out.println(filter);
 
-            // Filtrování databáze na základě AI odpovědi
+            // Database filter based on the AI response
             return auditLogRepository.findAll().stream()
                     .filter(log -> {
                         if (filter.usernames() == null || filter.usernames().isEmpty()) return true;

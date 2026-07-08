@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface AuditLogRepository extends JpaRepository<AuditLog, Long> {
-    // JpaRepository nám automaticky vygeneruje všechny základní DB operace
+    // JpaRepository automatically generates all the basic DB operations
 }
